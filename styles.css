@@ -19,12 +19,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.title {
-  font-family: "Baloo 2", cursive;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
 .form {
   margin-top: 1rem;
   display: flex;
@@ -114,12 +108,61 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 15rem;
 }
 
 .logo-div {
-  width: 400px;
-  display: flex;
+  position: absolute;
+  width: 200px;
+  /* top:15%; */
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
-  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .logo-div {
+    width: 275px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .logo-div {
+    width: 350px;
+  }
+}
+
+
+
+.header {
+    /* height: 100%; */
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: column;
+}
+
+@media (min-width: 1000px) {
+  .header {
+    /* font-size: 4rem; */
+  }
+}
+
+.timer {
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 50%;
+    font-size: 6rem;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}   
+
+@media (min-width: 700px) {
+  .timer {
+    top: 50%;
+    left: 30%;
+  }
 }

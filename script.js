@@ -1,3 +1,19 @@
+let timerValue = 0;
+let timer = setInterval(function () {
+  timerValue++;
+  console.log('timerValue', timerValue)
+  document.getElementById("timer").innerHTML = timerValue;
+}, 1000);
+
+
+
+
+
+
+
+
+
+
 let counter = 0;
 function AddInput() {
   if (counter <= 5) {
