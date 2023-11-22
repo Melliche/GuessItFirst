@@ -1,10 +1,30 @@
 let timerValue = 0;
-let timer = setInterval(function () {
-  timerValue++;
-  console.log('timerValue', timerValue)
-  document.getElementById("timer").innerHTML = timerValue;
-}, 1000);
+// let timer = setInterval(function () {
+//   timerValue++;
+//   console.log('timerValue', timerValue)
+//   document.getElementById("timer").innerHTML = timerValue;
+// }, 1000);
+let timer;
+function startTimer() {
+  timer = setInterval(function () {
+    timerValue++;
+    if (timerValue >=15) {
+      // clearInterval(timer);
+      document.getElementById("timer").innerHTML = timerValue;
+      document.getElementById("timer").style.color = "red";
+      if (timerValue  == 17) {
+        timerValue = 0;
+        document.getElementById("timer").innerHTML = timerValue;
+      }
+    } else {
+      document.getElementById("timer").innerHTML = timerValue;
+    }
+  }, 1000);
+}
 
+function stopTimer() {
+  clearInterval(timer);
+}
 
 
 

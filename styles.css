@@ -166,3 +166,53 @@ body {
     left: 30%;
   }
 }
+
+.timer-button {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #166f78; */
+    background-color: #ffbd1d;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Baloo 2", cursive;
+    font-weight: 550;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .timer-button {
+    top: 55%;
+    left: 30%;
+  }
+}
+
+.clear-timer {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #166f78; */
+    background-color: #ffbd1d;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Baloo 2", cursive;
+    font-weight: 550;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .clear-timer {
+    top: 59%;
+    left: 30%;
+  }
+}
