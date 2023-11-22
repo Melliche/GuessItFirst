@@ -15,6 +15,8 @@ function startTimer() {
       if (timerValue  == 17) {
         timerValue = 0;
         document.getElementById("timer").innerHTML = timerValue;
+        document.getElementById("timer").style.color = "white";
+
       }
     } else {
       document.getElementById("timer").innerHTML = timerValue;
