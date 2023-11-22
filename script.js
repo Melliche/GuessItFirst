@@ -13,9 +13,8 @@ function startTimer() {
       document.getElementById("timer").innerHTML = timerValue;
       document.getElementById("timer").style.color = "red";
       if (timerValue  == 17) {
-        timerValue = 0;
-        document.getElementById("timer").innerHTML = timerValue;
         document.getElementById("timer").style.color = "white";
+        resetTimer();
 
       }
     } else {
@@ -26,6 +25,11 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(timer);
+}
+
+function resetTimer() {
+  timerValue = 0;
+  document.getElementById("timer").innerHTML = timerValue;
 }
 
 
