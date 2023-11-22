@@ -1,11 +1,14 @@
-let timerValue = 0;
 // let timer = setInterval(function () {
-//   timerValue++;
-//   console.log('timerValue', timerValue)
-//   document.getElementById("timer").innerHTML = timerValue;
-// }, 1000);
-let timer;
+  //   timerValue++;
+  //   console.log('timerValue', timerValue)
+  //   document.getElementById("timer").innerHTML = timerValue;
+  // }, 1000);
+  let timerValue = 0;
+let timer = null;
 function startTimer() {
+  if (timer !== null) {
+    return; 
+  }  
   timer = setInterval(function () {
     timerValue++;
     if (timerValue >=15) {
@@ -25,6 +28,7 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(timer);
+  timer = null;
 }
 
 function resetTimer() {

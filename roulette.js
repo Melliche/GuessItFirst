@@ -1,4 +1,4 @@
-let colors = ['#1E1D24', '#783F8E', '#C52233', '#6DB1BF']; // Remplacez par vos couleurs
+let colors = ['BOUOU', '#1E1D24', '#783F8E', '#C52233', '#6DB1BF']; // Remplacez par vos couleurs
 let index = 0;
 
 $(document).ready(function(){
