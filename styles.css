@@ -154,7 +154,7 @@ body {
     position: absolute;
     color: white;
     top: 30%;
-    left: 50%;
+    left: 40%;
     font-size: 6rem;
     font-weight: bold;
     transform: translate(-50%, -50%);
@@ -169,8 +169,8 @@ body {
 
 .timer-button {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 26%;
+    left: 55%;
     transform: translate(-50%, -50%);
     /* background-color: #166f78; */
     background-color: #ffbd1d;
@@ -194,8 +194,8 @@ body {
 
 .clear-timer {
     position: absolute;
-    top: 34%;
-    left: 50%;
+    top: 30%;
+    left: 55%;
     transform: translate(-50%, -50%);
     /* background-color: #166f78; */
     background-color: #ffbd1d;
